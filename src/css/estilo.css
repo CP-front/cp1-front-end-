@@ -34,3 +34,47 @@ header nav ul{
     margin: 10px 0;
     display: flex;
 }
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.produto{
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-image: linear-gradient(#600606,#80091B,#200202);
+    color: #fff;
+    border-radius: 30px;
+}
+.produto img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.preco{
+    font-weight: 700;
+    margin-top: 50px;
+    color: aqua;
+    font-size: 1.7rem;
+}
+button{
+    background: #ddd;
+    margin-top: 25px;
+    padding: 15px 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background: #021b2b;
+    color: darkred
+}
