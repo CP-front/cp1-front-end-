@@ -29,8 +29,9 @@ header img {
 
 header nav ul{
     list-style: none;
-    padding: 0;
-            
+    padding: 10px;
+    justify-content: center;
+    justify-items: space-around;
     margin: 10px 0;
     display: flex;
 }
