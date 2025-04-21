@@ -20,25 +20,19 @@ header{
     padding: 20px;
     display: flex;
     justify-items: space-around;
-    height: 150px;
-}
-
-header img {
-    max-height: 220px;
-    max-width: 135px;
 }
 
 header nav ul{
-    list-style-type: none;
-    padding: 10px;
-    justify-content: center;
-    justify-items: space-around;
-    margin: 35px 500px;
+    list-style: none;
+    padding: 0;
+
+    margin: 10px 0;
     display: flex;
 }
 
 header nav ul li a{
     color: white;
+    text-decoration: none;
     text-transform: uppercase;
     padding: 5px 10px;
 }
@@ -53,7 +47,7 @@ header nav ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 20px;
-    padding: 20px;
+    padding: 0px;
 }
 
 main{
@@ -84,7 +78,7 @@ main{
 }
 button{
     background: #ddd;
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 15px 45px;
     border-radius: 20px;
     cursor: pointer;
@@ -131,6 +125,10 @@ footer{
     text-decoration: none;
 }
 
+.direitos{
+    margin-top: 100px;
+}
+
 /* RESPONSIVIDADE */
 @media(max-width:768px){
     header nav ul{
@@ -140,13 +138,32 @@ footer{
         align-items: center;
     }
     header nav ul li{
-        margin: 0;
+        width: 300px; 
+        height: 50px;
+        background-image: linear-gradient(#690d0d,#c22828,#921e1e); 
+        text-align: center; 
+        border-radius: 40px;
+        font-size: 1.5rem;   
+    }
+    header nav ul li a{ 
+        display: flex;/*DEIXA O CONTEUDO UM DO LADO DO OUTRO FLEXIVEL*/
+        justify-content: center;/*JUSTIFICA O CONTEUDO AO CENTRO*/
+        align-items: center;/*ALINHA OS ELEMENTOS */
+        color:#fff;/*COR DA FONTE*/
+        text-decoration: none;/*REMOVE AS LINHAS ABAIXO DO TEXTO*/
     }
     #conteudo{
         grid-template-columns: 1fr;
     }
     aside{
-        display: none;
-        width: 100%;
+        display: none;     
+    }
+    .footer-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+      
     }
 }
